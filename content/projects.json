@@ -1,0 +1,83 @@
+{
+  "projects": [
+    {
+      "title": "Real-Time Fraud Detection API",
+      "description": "Scores payment transactions as fraudulent in real time via k-nearest-neighbour search over 3 million reference transactions — with no database at all. A pre-built IVF index (2,048 k-means clusters, int8-quantized) is memory-mapped read-only and shared between two Go instances behind nginx, fitting the entire system inside 1 CPU core and 350 MB of RAM. Built for Rinha de Backend 2026.",
+      "url": "https://github.com/ThiaudioTT/fraud-detection-rinha-backend-2026",
+      "image_src": "/assets/uploads/screenshot-2026-08-18_16-01-35.png",
+      "technologies": [
+        "go",
+        "nginx",
+        "docker",
+        "mmap"
+      ],
+      "isClosedSource": false
+    },
+    {
+      "title": "Hikaricon — Geek Event Platform",
+      "description": "Full-stack platform for discovering and publishing geek events: anime conventions, gaming and tech. Go API behind a Next.js front end, Postgres on Supabase, image uploads to S3-compatible object storage (MinIO locally, S3 in production), fully containerised with Docker.",
+      "url": "https://hikaricon.vercel.app/",
+      "image_src": "/assets/uploads/hikaricon-demo.gif",
+      "technologies": [
+        "go",
+        "next.js",
+        "postgres",
+        "supabase",
+        "aws-s3",
+        "minIO",
+        "docker"
+      ],
+      "isClosedSource": true
+    },
+    {
+      "title": "HOI4 Discord Presence",
+      "description": "Discord Rich Presence for Hearts of Iron IV. Parses Paradox's plaintext save files to surface the player's country, ideology, in-game date and difficulty on their Discord profile, then ships as a one-click Windows installer that flips the game's save format and registers itself with the Paradox launcher. Picked up by players in the wild — 13 stars and 9 forks.",
+      "url": "https://github.com/ThiaudioTT/hoi4-presence",
+      "image_src": "/assets/uploads/demohoi4.png",
+      "technologies": [
+        "python",
+        "pypresence",
+        "pyinstaller"
+      ],
+      "isClosedSource": false
+    },
+    {
+      "title": "Multi-Provider Email Service",
+      "description": "REST email service in Java 21 and Spring Boot with automatic provider failover: delivery sits behind a provider interface, and the manager falls through from AWS SES to SendGrid when one errors out, so a single provider outage doesn't drop the message. Built as a solution to Uber's public backend coding challenge.",
+      "url": "https://github.com/ThiaudioTT/UberEmailService",
+      "image_src": "/assets/uploads/uber-email-service.png",
+      "technologies": [
+        "java21",
+        "spring-boot",
+        "aws-ses",
+        "sendgrid",
+        "lombok"
+      ],
+      "isClosedSource": false
+    },
+    {
+      "title": "Funny Form — Angular Custom Validators",
+      "description": "Interactive Angular demo of parameterised custom validators built with factory functions in reactive forms. Written as the companion project to a published Dev.to article walking through the pattern.",
+      "url": "https://github.com/ThiaudioTT/funny-form",
+      "image_src": "/assets/uploads/funny-form-demo.png",
+      "technologies": [
+        "angular",
+        "angular-material"
+      ],
+      "isClosedSource": false
+    },
+    {
+      "title": "Tower of Hanoi",
+      "description": "The classic recursion puzzle as a browser game, built in ClojureScript with Reagent and Shadow-cljs — immutable state and a functional approach to UI, compiled to a static site on GitHub Pages.",
+      "url": "https://github.com/ThiaudioTT/tower-of-hanoi",
+      "image_src": "/assets/uploads/hanoi-demo.png",
+      "technologies": [
+        "ClojureScript",
+        "Clojure",
+        "Reagent",
+        "Shadow-cljs"
+      ],
+      "isClosedSource": false
+    }
+  ]
+}

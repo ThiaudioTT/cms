@@ -1,0 +1,47 @@
+# Content lives in this repo. Editing happens locally (local_backend) and is published
+# with `git push` — see README.md. The `backend` block below is what Decap would use for
+# hosted editing; it is unused on localhost, but it documents the source of truth.
+backend:
+  name: github
+  repo: ThiaudioTT/cms
+  branch: main
+
+local_backend: true
+
+media_folder: assets/uploads
+public_folder: /assets/uploads
+
+# One collection per content type, one JSON file each. Adding a content type = add a file
+# here + create the JSON file. Nothing else is coupled.
+collections:
+  - name: projects
+    label: Projects
+    files:
+      - name: projects
+        label: Projects
+        file: content/projects.json
+        description: Portfolio projects, in display order.
+        fields:
+          - name: projects
+            label: Projects
+            label_singular: Project
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - { name: title, label: Title, widget: string }
+              - { name: description, label: Description, widget: text }
+              - name: url
+                label: URL
+                widget: string
+                pattern: ["^https?://", "Must start with http:// or https://"]
+              - { name: image_src, label: Image, widget: image }
+              - name: technologies
+                label: Technologies
+                label_singular: Technology
+                widget: list
+                hint: One per tag, e.g. react, typescript
+              - name: isClosedSource
+                label: Closed source
+                widget: boolean
+                default: false
+                required: false
