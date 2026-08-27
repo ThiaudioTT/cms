@@ -4,7 +4,7 @@
       "title": "Real-Time Fraud Detection API",
       "description": "Scores payment transactions as fraudulent in real time via k-nearest-neighbour search over 3 million reference transactions — with no database at all. A pre-built IVF index (2,048 k-means clusters, int8-quantized) is memory-mapped read-only and shared between two Go instances behind nginx, fitting the entire system inside 1 CPU core and 350 MB of RAM. Built for Rinha de Backend 2026.",
       "url": "https://github.com/ThiaudioTT/fraud-detection-rinha-backend-2026",
-      "image_src": "/assets/uploads/screenshot-2026-08-18_16-01-35.png",
+      "image_src": "/assets/uploads/rinha-back.png",
       "technologies": [
         "go",
         "nginx",
